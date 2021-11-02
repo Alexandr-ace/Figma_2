@@ -1,0 +1,219 @@
+@import "reset";
+@import "./../fonts/gilroy/font";
+
+%tplborder {
+    border-right: 1px solid #c4c4c4;
+    height: 90px;
+}
+%tpcenter {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+%supflex {
+    display: flex;
+    flex-direction: column;
+    max-width: 1295px;
+    margin: 0 auto;
+}
+
+.title {
+    &__conteiner {
+        max-width: 1295px;
+        margin: 0 auto;
+    }
+    &__flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__medi {
+        width: 260px;
+        @extend %tplborder;
+        @extend %tpcenter;
+        border-left: 1px solid #c4c4c4;
+    }
+
+    &__number {
+        width: 185px;
+        @extend %tplborder;
+        @extend %tpcenter;
+    }
+
+    &__salons {
+        width: 199px;
+        @extend %tplborder;
+        @extend %tpcenter;
+        justify-content: center;
+    }
+    &__flexbox {
+        @extend %tpcenter;
+        width: 139px;
+        justify-content: space-between;
+    }
+
+    &__our-salon {
+        font-size: 16px;
+        line-height: 19px;
+        font-family: "Gilroy";
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    &__version-for {
+        width: 331px;
+        @extend %tplborder;
+        @extend %tpcenter;
+    }
+
+    &__nav {
+        width: 320px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__pic {
+        @extend %tplborder;
+        @extend %tpcenter;
+        width: 80px;
+    }
+}
+/*блок с описанием работы компании 1 часть: меню*/
+.content {
+    background-color: #4fbfa5;
+    &__block {
+        @extend %supflex;
+    }
+}
+.menu {
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__alem {
+        height: 87px;
+        @extend %tpcenter;
+        color: #ffff;
+        &_active {
+            margin-top: 24px;
+            color: black;
+            width: 175px;
+            height: 40px;
+            background-color: #ffff;
+        }
+    }
+
+    &__words {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
+/*блок с описанием работы компании 2 часть: описание компании*/
+
+.decription {
+    display: flex;
+    flex-direction: row;
+    &__kosmet {
+        padding-top: 133px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 60px;
+    }
+
+    &__title {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 150%;
+        color: #ffffff;
+    }
+
+    &__inside-description {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: #ffffff;
+    }
+
+    &__bottom {
+        width: 163px;
+        height: 50px;
+        background-color: #00868a;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__bottom-span {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    &__arrows {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding-bottom: 60px;
+    }
+}
+/*блок с описанием работы компании 3 часть: небольшое меню*/
+.choces {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+
+    &__prosed {
+        @extend %tpcenter;
+        width: 648px;
+        background: #00868a;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 150%;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    &__styde {
+        @extend %tpcenter;
+        width: 324px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 150%;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    &__vip {
+        @extend %tpcenter;
+        background: #00868a;
+        width: 324px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 150%;
+        text-align: center;
+        color: #ffffff;
+    }
+}

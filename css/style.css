@@ -1,0 +1,366 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("./../fonts/Gilroy-Medium.woff2") format("woff2"), url("./../fonts/Gilroy-Medium.woff") format("woff"), url("./../fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.title__medi, .title__number, .title__salons, .title__version-for, .title__pic {
+  border-right: 1px solid #c4c4c4;
+  height: 90px;
+}
+
+.title__medi, .title__number, .title__salons, .title__flexbox, .title__version-for, .title__pic, .menu__alem, .choces__prosed, .choces__styde, .choces__vip {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1295px;
+  margin: 0 auto;
+}
+
+.title__conteiner {
+  max-width: 1295px;
+  margin: 0 auto;
+}
+
+.title__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title__medi {
+  width: 260px;
+  border-left: 1px solid #c4c4c4;
+}
+
+.title__number {
+  width: 185px;
+}
+
+.title__salons {
+  width: 199px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title__flexbox {
+  width: 139px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title__our-salon {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-style: normal;
+}
+
+.title__version-for {
+  width: 331px;
+}
+
+.title__nav {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.title__pic {
+  width: 80px;
+}
+
+/*блок с описанием работы компании 1 часть: меню*/
+.content {
+  background-color: #4fbfa5;
+}
+
+.menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu__alem {
+  height: 87px;
+  color: #ffff;
+}
+
+.menu__alem_active {
+  margin-top: 24px;
+  color: black;
+  width: 175px;
+  height: 40px;
+  background-color: #ffff;
+}
+
+.menu__words {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+/*блок с описанием работы компании 2 часть: описание компании*/
+.decription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.decription__kosmet {
+  padding-top: 133px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 60px;
+}
+
+.decription__title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.decription__inside-description {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.decription__bottom {
+  width: 163px;
+  height: 50px;
+  background-color: #00868a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.decription__bottom-span {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.decription__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-bottom: 60px;
+}
+
+/*блок с описанием работы компании 3 часть: небольшое меню*/
+.choces {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 80px;
+}
+
+.choces__prosed {
+  width: 648px;
+  background: #00868a;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.choces__styde {
+  width: 324px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.choces__vip {
+  background: #00868a;
+  width: 324px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}
