@@ -100,7 +100,7 @@ h6 {
   height: 90px;
 }
 
-.title__medi, .title__number, .title__salons, .title__flexbox, .title__version-for, .title__pic, .menu__alem, .choces__prosed, .choces__styde, .choces__vip {
+.title__medi, .title__number, .title__salons, .title__flexbox, .title__version-for, .title__pic, .menu__alem, .choces__prosed, .choces__styde, .choces__vip, .number__bottom-inside {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -112,7 +112,7 @@ h6 {
   display: flex;
 }
 
-.content__block {
+.content__block, .content-number__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,6 +122,16 @@ h6 {
           flex-direction: column;
   max-width: 1295px;
   margin: 0 auto;
+}
+
+.number__picture-description, .number__decription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .title__conteiner {
@@ -195,6 +205,10 @@ h6 {
 /*блок с описанием работы компании 1 часть: меню*/
 .content {
   background-color: #4fbfa5;
+}
+
+.content__block {
+  margin-bottom: 80px;
 }
 
 .menu__nav {
@@ -364,3 +378,104 @@ h6 {
   text-align: center;
   color: #ffffff;
 }
+
+/*блок с описанием работы компании и картинкой 4 часть: описание и картинка*/
+.content-number__block {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.number__picture-description {
+  background: #00868a;
+  width: 526px;
+  height: 580px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.number__decription {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 35px;
+  padding-left: 40px;
+  padding-bottom: 45px;
+  height: 570px;
+}
+
+.number__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.number__bottom-inside {
+  width: 125px;
+  height: 40px;
+  background: #4fbfa5;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.number__span-descriptin {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.number__pic-descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.number__pic-descr-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.number__descr {
+  margin-left: 20px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/*блок с описанием работы компании и списком 5 часть: описание и список*/
